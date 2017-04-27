@@ -4,7 +4,7 @@ RUN apk --update add curl tar bash wget libstdc++ && rm -rf /var/cache/apk/*
 
 
 ENV SOLR_USER solr
-ENV SOLR_VERSION 6.3.0
+ENV SOLR_VERSION 6.4.0
 ENV SOLR_DATA_DIR /opt/solr/data
 
 RUN adduser -D $SOLR_USER

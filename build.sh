@@ -7,4 +7,4 @@ fi
 
 
 
-docker build -t precognox/alpine-solr6$IMG_VERSION $* .
+docker build -t docker.precognox.com/alpine-solr$IMG_VERSION $* .
