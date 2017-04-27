@@ -1,5 +1,4 @@
 #!/bin/bash
 
-chown $SOLR_USER $CORE_DIR -R
-chown $SOLR_USER $SOLR_DATA_DIR -R
+chown -R $SOLR_USER $SOLR_DATA_DIR
 su  -c "/opt/solr/bin/solr -f $*" $SOLR_USER

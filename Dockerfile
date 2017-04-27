@@ -1,10 +1,10 @@
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM docker.precognox.com/alpine-oraclejdk:3.5-8u121-slim
 
 RUN apk --update add curl tar bash wget libstdc++ && rm -rf /var/cache/apk/*
 
 
 ENV SOLR_USER solr
-ENV SOLR_VERSION 6.4.0
+ENV SOLR_VERSION 6.5.1
 ENV SOLR_DATA_DIR /opt/solr/data
 
 RUN adduser -D $SOLR_USER
